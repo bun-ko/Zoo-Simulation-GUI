@@ -2,7 +2,6 @@ package zoo;
 
 public class giraffe extends animal
 {
-    @Override
     public String eat(){
         return "";
     }
