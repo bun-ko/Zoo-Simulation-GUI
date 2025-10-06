@@ -3,14 +3,14 @@ public class tiger extends animal
 {
     @Override
     public String eat(){
-        return "";
+        return "Eating meat...";
     }
     @Override
     public String move(){
-        return "";
+        return "Prowling...";
     }
     @Override
     public String sound(){
-        return "";
+        return "ROARRRRR!!!!";
     }
 }

@@ -3,14 +3,14 @@ package zoo;
 public class giraffe extends animal
 {
     public String eat(){
-        return "";
+        return "Eating leaves from tall trees...";
     }
     @Override
     public String move(){
-        return "";
+        return "Walking on all fours...";
     }
     @Override
     public String sound(){
-        return "";
+        return "Humming, snorting, grunting...";
     }
 }

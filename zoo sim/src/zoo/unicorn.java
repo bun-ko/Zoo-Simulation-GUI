@@ -2,12 +2,12 @@ package zoo;
 
 public class unicorn extends animal{
     String eat(){
-        return "";
+        return "Eating sparkles and cupcakes...";
     }
     String move(){
-        return "";
+        return "Galloping and flying...";
     }
     String sound(){
-        return "";
+        return "Magestic neighing...";
     }
 }
