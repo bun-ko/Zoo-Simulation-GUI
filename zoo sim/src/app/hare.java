@@ -1,4 +1,4 @@
-package zoo sim.bin.app;
+package zoo sim.src.app;
 
 public class hare {
     

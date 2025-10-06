@@ -1,16 +1,13 @@
-package zoo sim.bin.app;
+package zoo sim.src.app;
 
 public class unicorn extends animal{
-    @Override
-    public String eat(){
-        super(eat);
-    }
-    @Override
-    public String move(){
+    String eat(){
         return "";
     }
-    @Override
-    public String sound(){
-
+    String move(){
+        return "";
+    }
+    String sound(){
+        return "";
     }
 }
