@@ -1,4 +1,4 @@
-package app;
+package zoo;
 
 public abstract class animal{
     // methods inherited by the animals

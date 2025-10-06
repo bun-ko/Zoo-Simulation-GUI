@@ -1,9 +1,10 @@
-package app;
+package zoo;
 
-public class unicorn extends animal{
+public class hare extends animal
+{
     @Override
     public String eat(){
-        super(eat);
+        return "";
     }
     @Override
     public String move(){
@@ -11,6 +12,6 @@ public class unicorn extends animal{
     }
     @Override
     public String sound(){
-
+        return "";
     }
 }
