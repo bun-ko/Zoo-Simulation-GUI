@@ -1,3 +1,5 @@
+package app;
+
 public abstract class animal{
     // methods inherited by the animals
     abstract String eat();

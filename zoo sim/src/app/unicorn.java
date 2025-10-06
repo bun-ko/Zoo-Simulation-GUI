@@ -1,4 +1,4 @@
-package zoo sim.bin.app;
+package app;
 
 public class unicorn extends animal{
     @Override
