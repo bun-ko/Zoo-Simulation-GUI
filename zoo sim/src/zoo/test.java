@@ -1,7 +1,6 @@
 package zoo;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
 public class test 
 {
@@ -51,15 +50,50 @@ public class test
         gatorButton.addActionListener(e -> openAnimalWindow(new gator()));
     }
 
-    private static void openAnimalWindow(String title, String description) 
+    private static void openAnimalWindow(animal animal) 
     {
-        JFrame newFrame = new JFrame(title);
+        String animalName = animal.getClass().getSimpleName();
+    
+        JFrame newFrame = new JFrame(animalName);
         newFrame.setSize(1400, 800);
         newFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        newFrame.setLayout(new BorderLayout());
 
-        JLabel label = new JLabel(description, SwingConstants.CENTER);
-        newFrame.add(label);
+        JLabel label = new JLabel("This is a " + animalName, SwingConstants.CENTER);
+        label.setFont(new Font("Arial", Font.PLAIN, 16));
+        newFrame.add(label, BorderLayout.CENTER);
+
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new GridLayout(1, 3, 10, 10));
+
+        JButton eatButton = new JButton("Eat");
+        JButton soundButton = new JButton("Sound");
+        JButton moveButton = new JButton("Move");
+
+        buttonPanel.add(eatButton);
+        buttonPanel.add(soundButton);
+        buttonPanel.add(moveButton);
+
+        newFrame.add(buttonPanel, BorderLayout.SOUTH);
+
+        eatButton.addActionListener(e -> openInputWindow("Eat", animal.eat()));
+        soundButton.addActionListener(e -> openInputWindow("Sound", animal.sound()));
+        moveButton.addActionListener(e -> openInputWindow("Move", animal.move()));
 
         newFrame.setVisible(true);
+    }
+
+    private static void openInputWindow(String action, String message) 
+    {
+        JFrame inputFrame = new JFrame(action);
+        inputFrame.setSize(1400, 800);
+        inputFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        inputFrame.setLayout(new BorderLayout());
+
+        JLabel label = new JLabel(message, SwingConstants.CENTER);
+        label.setFont(new Font("Arial", Font.PLAIN, 14));
+        inputFrame.add(label, BorderLayout.CENTER);
+
+        inputFrame.setVisible(true);
     }
 }
