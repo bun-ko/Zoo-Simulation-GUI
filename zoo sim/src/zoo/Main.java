@@ -43,5 +43,17 @@ public class Main {
         System.out.println(gator.eat());
         System.out.println(gator.move());
         System.out.println(gator.sound());
+
+        System.out.println("\n Im a pig.");
+        animal pig = new pig();
+        System.out.println(pig.eat());
+        System.out.println(pig.move());
+        System.out.println(pig.sound());
+
+        System.out.println("\n Im a snake.");
+        animal snake = new snake();
+        System.out.println(snake.eat());
+        System.out.println(snake.move());
+        System.out.println(snake.sound());
     }
 }
