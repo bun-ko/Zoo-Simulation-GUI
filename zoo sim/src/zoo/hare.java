@@ -4,14 +4,14 @@ public class hare extends animal
 {
     @Override
     public String eat(){
-        return "";
+        return "Eating various vegetables...";
     }
     @Override
     public String move(){
-        return "";
+        return "Hopping around...";
     }
     @Override
     public String sound(){
-        return "";
+        return "Squeaking...";
     }
 }

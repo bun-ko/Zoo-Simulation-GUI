@@ -1,16 +1,16 @@
 package zoo;
-public class tiger extends animal
-{
+
+public class snake extends animal{
     @Override
     public String eat(){
-        return "Eating meat...";
+        return "Eating mice...";
     }
     @Override
     public String move(){
-        return "Prowling...";
+        return "Slithering...";
     }
     @Override
     public String sound(){
-        return "ROARRRRR!!!!";
+        return "Hissing and rattling...";
     }
 }

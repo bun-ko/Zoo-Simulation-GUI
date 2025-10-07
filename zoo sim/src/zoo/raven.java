@@ -4,14 +4,14 @@ public class raven extends animal
 {
     @Override
     public String eat(){
-        return "";
+        return "Eating vegetables, fruits, and bugs...";
     }
     @Override
     public String move(){
-        return "";
+        return "Flying...";
     }
     @Override
     public String sound(){
-        return "";
+        return "Cawing...";
     }
 }

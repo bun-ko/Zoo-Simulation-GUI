@@ -1,16 +1,13 @@
 package zoo;
 
 public class unicorn extends animal{
-    @Override
-    public String eat(){
-        return "";
+    String eat(){
+        return "Eating sparkles and cupcakes...";
     }
-    @Override
-    public String move(){
-        return "";
+    String move(){
+        return "Galloping and flying...";
     }
-    @Override
-    public String sound(){
-        return "";
+    String sound(){
+        return "Magestic neighing...";
     }
 }

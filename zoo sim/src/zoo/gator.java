@@ -4,14 +4,14 @@ public class gator extends animal
 {
     @Override
     public String eat(){
-        return "";
+        return "Eating alligator food...";
     }
     @Override
     public String move(){
-        return "";
+        return "Walking on all fours...";
     }
     @Override
     public String sound(){
-        return "";
+        return "Hissing...";
     }
 }

@@ -3,14 +3,14 @@ public class rhino extends animal
 {
     @Override
     public String eat(){
-        return "";
+        return "Eating grass...";
     }
     @Override
     public String move(){
-        return "";
+        return "Galloping...";
     }
     @Override
     public String sound(){
-        return "";
+        return "Mooing...";
     }
 }

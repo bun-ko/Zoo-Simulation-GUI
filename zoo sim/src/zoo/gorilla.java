@@ -4,14 +4,14 @@ public class gorilla extends animal
 {
     @Override
     public String eat(){
-        return "";
+        return "Eating a banana...";
     }
     @Override
     public String move(){
-        return "";
+        return "Moving primarily with forelimbs...";
     }
     @Override
     public String sound(){
-        return "";
+        return "Screaming and beating chest...";
     }
 }
