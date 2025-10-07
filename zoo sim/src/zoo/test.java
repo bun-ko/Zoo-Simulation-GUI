@@ -1,4 +1,4 @@
-package gui;
+package zoo;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -37,14 +37,18 @@ public class test
         panel.add(gatorButton);
 
         frame.add(panel);
-
         frame.setVisible(true);
 
-        tigerButton.addActionListener(e -> openAnimalWindow("Tiger", "Tigers are large carnivorous cats found in Asia."));
-        giraffeButton.addActionListener(e -> openAnimalWindow("Giraffe", "Giraffes have long necks and eat leaves from tall trees."));
-        rhinoButton.addActionListener(e -> openAnimalWindow("Rhino", "Rhinos are known for their horns and thick skin."));
-        unicornButton.addActionListener(e -> openAnimalWindow("Unicorn", "A mythical horse with a single horn!"));
-        hareButton.addActionListener(e -> openAnimalWindow("Hare", "A mythical horse with a single horn!"));
+        tigerButton.addActionListener(e -> openAnimalWindow(new tiger()));
+        giraffeButton.addActionListener(e -> openAnimalWindow(new giraffe()));
+        rhinoButton.addActionListener(e -> openAnimalWindow(new rhino()));
+        unicornButton.addActionListener(e -> openAnimalWindow(new unicorn()));
+        hareButton.addActionListener(e -> openAnimalWindow(new hare()));
+        snakeButton.addActionListener(e -> openAnimalWindow(new snake()));
+        ravenButton.addActionListener(e -> openAnimalWindow(new raven()));
+        pigButton.addActionListener(e -> openAnimalWindow(new pig()));
+        gorillaButton.addActionListener(e -> openAnimalWindow(new gorilla()));
+        gatorButton.addActionListener(e -> openAnimalWindow(new gator()));
     }
 
     private static void openAnimalWindow(String title, String description) 
