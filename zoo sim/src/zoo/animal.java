@@ -9,12 +9,12 @@ public abstract class animal{
         this.eatBehavior = eatBehavior;
         this.moveBehavior = moveBehavior;
         this.soundBehavior = soundBehavior;
-
-        
-
     }
+
     
-    public String performEat(){
+        public String performEat(){
             eatBehavior.eat();
+
+            return "";
         }
 }
