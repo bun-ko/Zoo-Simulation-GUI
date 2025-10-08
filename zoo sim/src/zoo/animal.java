@@ -11,16 +11,16 @@ public abstract class animal{
         this.soundBehavior = soundBehavior;
     }
 
-    public void performEat(){
-        eatBehavior.eat();
+    public String performEat(){
+        return eatBehavior.eat();
     }
 
-    public void performMove(){
-        moveBehavior.move();
+    public String performMove(){
+        return moveBehavior.move();
     }
 
-    public void performSound(){
-        soundBehavior.sound();
+    public String performSound(){
+        return soundBehavior.sound();
     }
 
     public void setEatBehavior(eat newEB){
