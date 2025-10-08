@@ -38,16 +38,16 @@ public class test
         frame.add(panel);
         frame.setVisible(true);
 
-        tigerButton.addActionListener(e -> openAnimalWindow(new tiger()));
-        giraffeButton.addActionListener(e -> openAnimalWindow(new giraffe()));
-        rhinoButton.addActionListener(e -> openAnimalWindow(new rhino()));
-        unicornButton.addActionListener(e -> openAnimalWindow(new unicorn()));
-        hareButton.addActionListener(e -> openAnimalWindow(new hare()));
-        snakeButton.addActionListener(e -> openAnimalWindow(new snake()));
-        ravenButton.addActionListener(e -> openAnimalWindow(new raven()));
-        pigButton.addActionListener(e -> openAnimalWindow(new pig()));
-        gorillaButton.addActionListener(e -> openAnimalWindow(new gorilla()));
-        gatorButton.addActionListener(e -> openAnimalWindow(new gator()));
+        tigerButton.addActionListener(e -> openAnimalWindow(new tiger(new carnivoreEat(), new walkingMove(), new growlSound())));
+        giraffeButton.addActionListener(e -> openAnimalWindow(new giraffe(new herbivoreEat(), new walkingMove(), new silentSound())));
+        rhinoButton.addActionListener(e -> openAnimalWindow(new rhino(new herbivoreEat(), new walkingMove(), new silentSound())));
+        unicornButton.addActionListener(e -> openAnimalWindow(new unicorn(new herbivoreEat(), new flyingMove(), new squeakSound())));
+        hareButton.addActionListener(e -> openAnimalWindow(new hare(new herbivoreEat(), new walkingMove(), new squeakSound())));
+        snakeButton.addActionListener(e -> openAnimalWindow(new snake(new carnivoreEat(), new slitherMove(), new growlSound())));
+        ravenButton.addActionListener(e -> openAnimalWindow(new raven(new omnivoreEat(), new flyingMove(), new squeakSound())));
+        pigButton.addActionListener(e -> openAnimalWindow(new pig(new herbivoreEat(), new walkingMove(), new squeakSound())));
+        gorillaButton.addActionListener(e -> openAnimalWindow(new gorilla(new omnivoreEat(), new walkingMove(), new growlSound())));
+        gatorButton.addActionListener(e -> openAnimalWindow(new gator(new carnivoreEat(), new swimmingMove(), new growlSound())));
     }
 
     private static void openAnimalWindow(animal animal) 
@@ -76,9 +76,9 @@ public class test
 
         newFrame.add(buttonPanel, BorderLayout.SOUTH);
 
-        eatButton.addActionListener(e -> openInputWindow("Eat", animal.eat()));
-        soundButton.addActionListener(e -> openInputWindow("Sound", animal.sound()));
-        moveButton.addActionListener(e -> openInputWindow("Move", animal.move()));
+        eatButton.addActionListener(e -> openInputWindow("Eat", animal.performEat()));
+        soundButton.addActionListener(e -> openInputWindow("Sound", animal.performSound()));
+        moveButton.addActionListener(e -> openInputWindow("Move", animal.performMove()));
 
         newFrame.setVisible(true);
     }
