@@ -11,10 +11,27 @@ public abstract class animal{
         this.soundBehavior = soundBehavior;
     }
 
-    
-        public String performEat(){
-            eatBehavior.eat();
+    public void performEat(){
+        eatBehavior.eat();
+    }
 
-            return "";
-        }
+    public void performMove(){
+        moveBehavior.move();
+    }
+
+    public void performSound(){
+        soundBehavior.sound();
+    }
+
+    public void setEatBehavior(eat newEB){
+        eatBehavior = newEB;
+    }
+
+    public void setMoveBehavior(move newMB){
+        moveBehavior = newMB;
+    }
+
+    public void setSoundBehavior(sound newSB){
+        soundBehavior = newSB;
+    }
 }
