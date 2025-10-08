@@ -1,16 +1,7 @@
 package zoo;
 
 public class snake extends animal{
-    @Override
-    public String eat(){
-        return "Eating mice...";
-    }
-    @Override
-    public String move(){
-        return "Slithering...";
-    }
-    @Override
-    public String sound(){
-        return "Hissing and rattling...";
+    public snake(eat eatBehavior, move moveBehavior, sound soundBehavior) {
+        super(eatBehavior, moveBehavior, soundBehavior);
     }
 }
