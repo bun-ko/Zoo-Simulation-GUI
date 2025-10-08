@@ -1,5 +1,5 @@
 package zoo;
 
-public interface eat {
-    
+interface eat {
+    public void eat();
 }

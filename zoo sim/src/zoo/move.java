@@ -1,5 +1,5 @@
 package zoo;
 
-public interface move {
-    
+interface move {
+    public void move();
 }
